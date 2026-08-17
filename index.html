@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>QuickFinds Daily — 2026-08-16</title>
+<title>QuickFinds Daily — 2026-08-17</title>
 <style>
   :root{--blue:#1A5FF5;--ink:#0E1A33;--sun:#FFD23F;--mint:#19BF70;--coral:#FF5C8A;--lav:#A78BFA;--ice:#E6F4FE}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -28,8 +28,11 @@
   .chip.tiktok{background:var(--ink);color:#fff}
   .acct{font-weight:800;font-size:14px}
   .njob{font-size:12px;opacity:.5;font-weight:700}
-  .post-btn{margin-left:auto;border:0;font:inherit;font-size:12.5px;font-weight:800;
+  .post-btn{border:0;font:inherit;font-size:12.5px;font-weight:800;
     background:var(--sun);color:var(--ink);border-radius:99px;padding:7px 14px;cursor:pointer}
+  .save-btn{margin-left:auto;border:0;font:inherit;font-size:12.5px;font-weight:800;
+    background:var(--blue);color:#fff;border-radius:99px;padding:7px 14px;cursor:pointer}
+  .save-btn:disabled{opacity:.55}
   .strip{display:flex;gap:8px;overflow-x:auto;border-radius:12px}
   .strip img{height:250px;border-radius:10px;display:block;border:1px solid rgba(14,26,51,.1)}
   .cap{margin-top:10px;background:#F4F7FE;border-radius:12px;padding:10px 12px;position:relative}
@@ -48,131 +51,261 @@
 </style></head><body>
 <div class="top">
   <h1>quickfinds <span>daily</span></h1>
-  <div class="meta"><span>2026-08-16</span><span>5 posts · 29 slides</span>
-    <span class="prog"><b id="done">0</b>/5 posted</span></div>
+  <div class="meta"><span>2026-08-17</span><span>10 posts · 59 slides</span>
+    <span class="prog"><b id="done">0</b>/10 posted</span></div>
   <div class="tabs">
-    <button class="tab on" data-f="all" onclick="setFilter('all',this)">All 5</button>
-    <button class="tab" data-f="instagram" onclick="setFilter('instagram',this)">IG 0</button>
-    <button class="tab" data-f="tiktok" onclick="setFilter('tiktok',this)">TikTok 5</button>
+    <button class="tab on" data-f="all" onclick="setFilter('all',this)">All 10</button>
+    <button class="tab" data-f="instagram" onclick="setFilter('instagram',this)">IG 10</button>
+    <button class="tab" data-f="tiktok" onclick="setFilter('tiktok',this)">TikTok 0</button>
   </div>
 </div>
-<nav class="days"><span class="day on">08-16</span><a class="day" href="day-2026-08-15.html">08-15</a><a class="day" href="day-2026-08-10.html">08-10</a><a class="day" href="day-2026-08-07.html">08-07</a></nav>
+<nav class="days"><span class="day on">08-17</span><a class="day" href="day-2026-08-16.html">08-16</a><a class="day" href="day-2026-08-15.html">08-15</a><a class="day" href="day-2026-08-10.html">08-10</a><a class="day" href="day-2026-08-07.html">08-07</a></nav>
 <main>
-    <article class="card" data-id="2026-08-16:tiktok:beauty_finds:2026-08-16-004" data-platform="tiktok">
+    <article class="card" data-id="2026-08-17:instagram:beauty_finds:2026-08-17-007" data-platform="instagram">
       <header>
-        <span class="chip tiktok">TikTok</span>
+        <span class="chip instagram">Instagram</span>
         <span class="acct">@beauty_finds</span>
-        <span class="nslides">4 slides</span>
-        <button class="post-btn" onclick="togglePosted('2026-08-16:tiktok:beauty_finds:2026-08-16-004', this)">mark posted</button>
-      </header>
-      <div class="strip">
-        <a href="a/tiktok/beauty_finds/2026-08-16-004/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-16-004/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-16-004/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-16-004/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-16-004/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-16-004/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-16-004/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-16-004/slide-04.jpg" alt="slide 4"></a>
-      </div>
-      
-      <div class="cap">
-        <pre>the same purina free balance 12:12 vitamin and mineral horse supplement, is $12 cheaper at chewy than at tractor supply today
-
-#quickfinds #tiktokmademebuyit #dealsoftheday #shoppinghacks #savingmoney</pre>
-        <button class="copy" onclick="copyCap(this)">copy caption</button>
-      </div>
-    </article>
-
-    <article class="card" data-id="2026-08-16:tiktok:college_finds:2026-08-16-003" data-platform="tiktok">
-      <header>
-        <span class="chip tiktok">TikTok</span>
-        <span class="acct">@college_finds</span>
         <span class="nslides">5 slides</span>
-        <button class="post-btn" onclick="togglePosted('2026-08-16:tiktok:college_finds:2026-08-16-003', this)">mark posted</button>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:beauty_finds:2026-08-17-007', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/college_finds/2026-08-16-003/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-16-003/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/college_finds/2026-08-16-003/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-16-003/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/college_finds/2026-08-16-003/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-16-003/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/college_finds/2026-08-16-003/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-16-003/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/college_finds/2026-08-16-003/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-16-003/slide-05.jpg" alt="slide 5"></a>
+      <div class="strip" data-files="a/instagram/beauty_finds/2026-08-17-007/slide-01.jpg|a/instagram/beauty_finds/2026-08-17-007/slide-02.jpg|a/instagram/beauty_finds/2026-08-17-007/slide-03.jpg|a/instagram/beauty_finds/2026-08-17-007/slide-05.jpg|a/instagram/beauty_finds/2026-08-17-007/slide-06.jpg">
+        <a href="a/instagram/beauty_finds/2026-08-17-007/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-007/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-007/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-007/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-007/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-007/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-007/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-007/slide-05.jpg" alt="slide 4"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-007/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-007/slide-06.jpg" alt="slide 5"></a>
       </div>
       
       <div class="cap">
-        <pre>kitchen stuff is where i keep catching myself paying more for nothing
+        <pre>the same tatcha the dewy skin cream hydrating &amp; firming refillable is $68 cheaper at ulta than at sephora today
 
-#quickfinds #tiktokmademebuyit #dealsoftheday #shoppinghacks #savingmoney</pre>
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
         <button class="copy" onclick="copyCap(this)">copy caption</button>
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-16:tiktok:daily_finds:2026-08-16-005" data-platform="tiktok">
+    <article class="card" data-id="2026-08-17:instagram:beauty_finds:2026-08-17-008" data-platform="instagram">
       <header>
-        <span class="chip tiktok">TikTok</span>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@beauty_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:beauty_finds:2026-08-17-008', this)">mark posted</button>
+      </header>
+      <div class="strip" data-files="a/instagram/beauty_finds/2026-08-17-008/slide-01.jpg|a/instagram/beauty_finds/2026-08-17-008/slide-02.jpg|a/instagram/beauty_finds/2026-08-17-008/slide-03.jpg|a/instagram/beauty_finds/2026-08-17-008/slide-04.jpg|a/instagram/beauty_finds/2026-08-17-008/slide-05.jpg|a/instagram/beauty_finds/2026-08-17-008/slide-06.jpg">
+        <a href="a/instagram/beauty_finds/2026-08-17-008/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-008/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-008/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-008/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-008/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-008/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-008/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-008/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-008/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-008/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/beauty_finds/2026-08-17-008/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-17-008/slide-06.jpg" alt="slide 6"></a>
+      </div>
+      
+      <div class="cap">
+        <pre>revlon dryers are everywhere so it never occurred to me to compare
+
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
+        <button class="copy" onclick="copyCap(this)">copy caption</button>
+      </div>
+    </article>
+
+    <article class="card" data-id="2026-08-17:instagram:college_finds:2026-08-17-005" data-platform="instagram">
+      <header>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@college_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:college_finds:2026-08-17-005', this)">mark posted</button>
+      </header>
+      <div class="strip" data-files="a/instagram/college_finds/2026-08-17-005/slide-01.jpg|a/instagram/college_finds/2026-08-17-005/slide-02.jpg|a/instagram/college_finds/2026-08-17-005/slide-03.jpg|a/instagram/college_finds/2026-08-17-005/slide-04.jpg|a/instagram/college_finds/2026-08-17-005/slide-05.jpg|a/instagram/college_finds/2026-08-17-005/slide-06.jpg">
+        <a href="a/instagram/college_finds/2026-08-17-005/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-005/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/college_finds/2026-08-17-005/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-005/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/college_finds/2026-08-17-005/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-005/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/college_finds/2026-08-17-005/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-005/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/college_finds/2026-08-17-005/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-005/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/college_finds/2026-08-17-005/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-005/slide-06.jpg" alt="slide 6"></a>
+      </div>
+      
+      <div class="cap">
+        <pre>the same nike brasilia 9.5 training backpack (extra large), black navy is $14 cheaper at macys than at kohls today
+
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
+        <button class="copy" onclick="copyCap(this)">copy caption</button>
+      </div>
+    </article>
+
+    <article class="card" data-id="2026-08-17:instagram:college_finds:2026-08-17-006" data-platform="instagram">
+      <header>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@college_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:college_finds:2026-08-17-006', this)">mark posted</button>
+      </header>
+      <div class="strip" data-files="a/instagram/college_finds/2026-08-17-006/slide-01.jpg|a/instagram/college_finds/2026-08-17-006/slide-02.jpg|a/instagram/college_finds/2026-08-17-006/slide-03.jpg|a/instagram/college_finds/2026-08-17-006/slide-04.jpg|a/instagram/college_finds/2026-08-17-006/slide-05.jpg|a/instagram/college_finds/2026-08-17-006/slide-06.jpg">
+        <a href="a/instagram/college_finds/2026-08-17-006/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-006/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/college_finds/2026-08-17-006/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-006/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/college_finds/2026-08-17-006/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-006/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/college_finds/2026-08-17-006/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-006/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/college_finds/2026-08-17-006/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-006/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/college_finds/2026-08-17-006/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-17-006/slide-06.jpg" alt="slide 6"></a>
+      </div>
+      
+      <div class="cap">
+        <pre>the same lodge day of the dead cast iron skillet is $16 cheaper at wayfair than at sur la table today
+
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
+        <button class="copy" onclick="copyCap(this)">copy caption</button>
+      </div>
+    </article>
+
+    <article class="card" data-id="2026-08-17:instagram:daily_finds:2026-08-17-009" data-platform="instagram">
+      <header>
+        <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_finds</span>
-        <span class="nslides">8 slides</span>
-        <button class="post-btn" onclick="togglePosted('2026-08-16:tiktok:daily_finds:2026-08-16-005', this)">mark posted</button>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:daily_finds:2026-08-17-009', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-07.jpg" alt="slide 7"></a>
-        <a href="a/tiktok/daily_finds/2026-08-16-005/slide-08.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-16-005/slide-08.jpg" alt="slide 8"></a>
+      <div class="strip" data-files="a/instagram/daily_finds/2026-08-17-009/slide-01.jpg|a/instagram/daily_finds/2026-08-17-009/slide-02.jpg|a/instagram/daily_finds/2026-08-17-009/slide-03.jpg|a/instagram/daily_finds/2026-08-17-009/slide-04.jpg|a/instagram/daily_finds/2026-08-17-009/slide-05.jpg|a/instagram/daily_finds/2026-08-17-009/slide-06.jpg">
+        <a href="a/instagram/daily_finds/2026-08-17-009/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-009/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-009/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-009/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-009/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-009/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-009/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-009/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-009/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-009/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-009/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-009/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
-        <pre>the same coming home scarf is $35 cheaper at macys than at shop premium outlets today
+        <pre>i checked one other shop out of boredom and now i always do
 
-#quickfinds #tiktokmademebuyit #dealsoftheday #shoppinghacks #savingmoney</pre>
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
         <button class="copy" onclick="copyCap(this)">copy caption</button>
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-16:tiktok:home_finds:2026-08-16-001" data-platform="tiktok">
+    <article class="card" data-id="2026-08-17:instagram:daily_finds:2026-08-17-010" data-platform="instagram">
       <header>
-        <span class="chip tiktok">TikTok</span>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@daily_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:daily_finds:2026-08-17-010', this)">mark posted</button>
+      </header>
+      <div class="strip" data-files="a/instagram/daily_finds/2026-08-17-010/slide-01.jpg|a/instagram/daily_finds/2026-08-17-010/slide-02.jpg|a/instagram/daily_finds/2026-08-17-010/slide-03.jpg|a/instagram/daily_finds/2026-08-17-010/slide-04.jpg|a/instagram/daily_finds/2026-08-17-010/slide-05.jpg|a/instagram/daily_finds/2026-08-17-010/slide-06.jpg">
+        <a href="a/instagram/daily_finds/2026-08-17-010/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-010/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-010/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-010/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-010/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-010/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-010/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-010/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-010/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-010/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/daily_finds/2026-08-17-010/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-17-010/slide-06.jpg" alt="slide 6"></a>
+      </div>
+      
+      <div class="cap">
+        <pre>the same men's adidas firebird track jacket xlarge better scarlet is $40 cheaper at shop premium outlets than at scheels today
+
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
+        <button class="copy" onclick="copyCap(this)">copy caption</button>
+      </div>
+    </article>
+
+    <article class="card" data-id="2026-08-17:instagram:home_finds:2026-08-17-001" data-platform="instagram">
+      <header>
+        <span class="chip instagram">Instagram</span>
         <span class="acct">@home_finds</span>
-        <span class="nslides">4 slides</span>
-        <button class="post-btn" onclick="togglePosted('2026-08-16:tiktok:home_finds:2026-08-16-001', this)">mark posted</button>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:home_finds:2026-08-17-001', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/home_finds/2026-08-16-001/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-16-001/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/home_finds/2026-08-16-001/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-16-001/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/home_finds/2026-08-16-001/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-16-001/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/home_finds/2026-08-16-001/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-16-001/slide-04.jpg" alt="slide 4"></a>
+      <div class="strip" data-files="a/instagram/home_finds/2026-08-17-001/slide-01.jpg|a/instagram/home_finds/2026-08-17-001/slide-02.jpg|a/instagram/home_finds/2026-08-17-001/slide-03.jpg|a/instagram/home_finds/2026-08-17-001/slide-04.jpg|a/instagram/home_finds/2026-08-17-001/slide-05.jpg|a/instagram/home_finds/2026-08-17-001/slide-06.jpg">
+        <a href="a/instagram/home_finds/2026-08-17-001/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-001/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/home_finds/2026-08-17-001/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-001/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/home_finds/2026-08-17-001/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-001/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/home_finds/2026-08-17-001/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-001/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/home_finds/2026-08-17-001/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-001/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/home_finds/2026-08-17-001/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-001/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
-        <pre>the same kitchenaid beacon mini 2-pc. oven mitt set is $10 cheaper at lowes than at macys today
+        <pre>i almost paid way more for the same red coffee maker on my counter
 
-#quickfinds #tiktokmademebuyit #dealsoftheday #shoppinghacks #savingmoney</pre>
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
         <button class="copy" onclick="copyCap(this)">copy caption</button>
       </div>
     </article>
 
-    <article class="card" data-id="2026-08-16:tiktok:tech_finds:2026-08-16-002" data-platform="tiktok">
+    <article class="card" data-id="2026-08-17:instagram:home_finds:2026-08-17-002" data-platform="instagram">
       <header>
-        <span class="chip tiktok">TikTok</span>
-        <span class="acct">@tech_finds</span>
-        <span class="nslides">8 slides</span>
-        <button class="post-btn" onclick="togglePosted('2026-08-16:tiktok:tech_finds:2026-08-16-002', this)">mark posted</button>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@home_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:home_finds:2026-08-17-002', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-07.jpg" alt="slide 7"></a>
-        <a href="a/tiktok/tech_finds/2026-08-16-002/slide-08.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-16-002/slide-08.jpg" alt="slide 8"></a>
+      <div class="strip" data-files="a/instagram/home_finds/2026-08-17-002/slide-01.jpg|a/instagram/home_finds/2026-08-17-002/slide-02.jpg|a/instagram/home_finds/2026-08-17-002/slide-03.jpg|a/instagram/home_finds/2026-08-17-002/slide-04.jpg|a/instagram/home_finds/2026-08-17-002/slide-05.jpg|a/instagram/home_finds/2026-08-17-002/slide-06.jpg">
+        <a href="a/instagram/home_finds/2026-08-17-002/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-002/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/home_finds/2026-08-17-002/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-002/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/home_finds/2026-08-17-002/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-002/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/home_finds/2026-08-17-002/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-002/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/home_finds/2026-08-17-002/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-002/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/home_finds/2026-08-17-002/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-17-002/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
-        <pre>half of these i only caught because i checked quickfinds out of pure spite
+        <pre>the same cuisinart - coffee grinder is $16 cheaper at wayfair than at best buy today
 
-#quickfinds #tiktokmademebuyit #dealsoftheday #shoppinghacks #savingmoney</pre>
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
+        <button class="copy" onclick="copyCap(this)">copy caption</button>
+      </div>
+    </article>
+
+    <article class="card" data-id="2026-08-17:instagram:tech_finds:2026-08-17-003" data-platform="instagram">
+      <header>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@tech_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:tech_finds:2026-08-17-003', this)">mark posted</button>
+      </header>
+      <div class="strip" data-files="a/instagram/tech_finds/2026-08-17-003/slide-01.jpg|a/instagram/tech_finds/2026-08-17-003/slide-02.jpg|a/instagram/tech_finds/2026-08-17-003/slide-03.jpg|a/instagram/tech_finds/2026-08-17-003/slide-04.jpg|a/instagram/tech_finds/2026-08-17-003/slide-05.jpg|a/instagram/tech_finds/2026-08-17-003/slide-06.jpg">
+        <a href="a/instagram/tech_finds/2026-08-17-003/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-003/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-003/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-003/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-003/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-003/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-003/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-003/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-003/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-003/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-003/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-003/slide-06.jpg" alt="slide 6"></a>
+      </div>
+      
+      <div class="cap">
+        <pre>the same jbl vibe beam 2 true wireless earbuds is $25 cheaper at kohls than at macys today
+
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
+        <button class="copy" onclick="copyCap(this)">copy caption</button>
+      </div>
+    </article>
+
+    <article class="card" data-id="2026-08-17:instagram:tech_finds:2026-08-17-004" data-platform="instagram">
+      <header>
+        <span class="chip instagram">Instagram</span>
+        <span class="acct">@tech_finds</span>
+        <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
+        <button class="post-btn" onclick="togglePosted('2026-08-17:instagram:tech_finds:2026-08-17-004', this)">mark posted</button>
+      </header>
+      <div class="strip" data-files="a/instagram/tech_finds/2026-08-17-004/slide-01.jpg|a/instagram/tech_finds/2026-08-17-004/slide-02.jpg|a/instagram/tech_finds/2026-08-17-004/slide-03.jpg|a/instagram/tech_finds/2026-08-17-004/slide-04.jpg|a/instagram/tech_finds/2026-08-17-004/slide-05.jpg|a/instagram/tech_finds/2026-08-17-004/slide-06.jpg">
+        <a href="a/instagram/tech_finds/2026-08-17-004/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-004/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-004/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-004/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-004/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-004/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-004/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-004/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-004/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-004/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/tech_finds/2026-08-17-004/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-17-004/slide-06.jpg" alt="slide 6"></a>
+      </div>
+      
+      <div class="cap">
+        <pre>the same jlab flex open-clip true wireless earbuds is $10 cheaper at best buy than at lenovo usa today
+
+#quickfinds #dealfinder #pricecomparison #shopsmart #savemoney</pre>
         <button class="copy" onclick="copyCap(this)">copy caption</button>
       </div>
     </article></main>
@@ -198,6 +331,54 @@
   function copyCap(btn) {
     const text = btn.parentElement.querySelector('pre').textContent;
     navigator.clipboard.writeText(text).then(() => { btn.textContent = 'copied ✓'; setTimeout(() => btn.textContent = 'copy caption', 1400); });
+  }
+
+  // Getting the slides onto the phone that will post them.
+  //
+  // The old markup put download="" on the <a> around each thumbnail and left it
+  // at that, which failed twice over: there was no visible control, so nothing
+  // told you it was possible — and iOS Safari ignores the download attribute
+  // entirely, so tapping a slide just opened the image in a new tab. On the one
+  // device that actually does the posting, the feature did not exist.
+  //
+  // navigator.share with files IS supported on iOS and opens the native share
+  // sheet with Save Image / Save N Images, which is the only reliable route
+  // into the camera roll from a web page. Desktop browsers mostly do not
+  // support file sharing, so they fall back to sequential downloads, which is
+  // exactly where the download attribute does work.
+  async function saveSlides(btn) {
+    const strip = btn.closest('.card').querySelector('.strip');
+    const urls = strip.dataset.files.split('|').filter(Boolean);
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'preparing…';
+    try {
+      const files = await Promise.all(urls.map(async (u) => {
+        const blob = await (await fetch(u)).blob();
+        return new File([blob], u.split('/').pop(), { type: blob.type || 'image/jpeg' });
+      }));
+      if (navigator.canShare && navigator.canShare({ files })) {
+        btn.textContent = 'sharing…';
+        await navigator.share({ files });
+        btn.textContent = 'saved ✓';
+      } else {
+        // One click cannot fire N downloads without the browser blocking the
+        // rest, so they are spaced out.
+        files.forEach((f, i) => setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(f);
+          a.download = f.name;
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+        }, i * 350));
+        btn.textContent = 'downloaded ✓';
+      }
+    } catch (e) {
+      // AbortError just means the share sheet was dismissed — not a failure.
+      btn.textContent = e && e.name === 'AbortError' ? original : 'failed — retry';
+    }
+    btn.disabled = false;
+    setTimeout(() => { btn.textContent = original; }, 2200);
   }
   refresh();
 </script>

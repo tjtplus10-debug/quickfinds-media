@@ -28,8 +28,11 @@
   .chip.tiktok{background:var(--ink);color:#fff}
   .acct{font-weight:800;font-size:14px}
   .njob{font-size:12px;opacity:.5;font-weight:700}
-  .post-btn{margin-left:auto;border:0;font:inherit;font-size:12.5px;font-weight:800;
+  .post-btn{border:0;font:inherit;font-size:12.5px;font-weight:800;
     background:var(--sun);color:var(--ink);border-radius:99px;padding:7px 14px;cursor:pointer}
+  .save-btn{margin-left:auto;border:0;font:inherit;font-size:12.5px;font-weight:800;
+    background:var(--blue);color:#fff;border-radius:99px;padding:7px 14px;cursor:pointer}
+  .save-btn:disabled{opacity:.55}
   .strip{display:flex;gap:8px;overflow-x:auto;border-radius:12px}
   .strip img{height:250px;border-radius:10px;display:block;border:1px solid rgba(14,26,51,.1)}
   .cap{margin-top:10px;background:#F4F7FE;border-radius:12px;padding:10px 12px;position:relative}
@@ -56,22 +59,23 @@
     <button class="tab" data-f="tiktok" onclick="setFilter('tiktok',this)">TikTok 10</button>
   </div>
 </div>
-<nav class="days"><a class="day" href="index.html">08-16</a><a class="day" href="day-2026-08-15.html">08-15</a><a class="day" href="day-2026-08-10.html">08-10</a><span class="day on">08-07</span></nav>
+<nav class="days"><a class="day" href="index.html">08-17</a><a class="day" href="day-2026-08-16.html">08-16</a><a class="day" href="day-2026-08-15.html">08-15</a><a class="day" href="day-2026-08-10.html">08-10</a><span class="day on">08-07</span></nav>
 <main>
     <article class="card" data-id="2026-08-07:instagram:beauty_finds:2026-08-07-010" data-platform="instagram">
       <header>
         <span class="chip instagram">Instagram</span>
         <span class="acct">@beauty_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:beauty_finds:2026-08-07-010', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/beauty_finds/2026-08-07-010/slide-01.jpg|a/instagram/beauty_finds/2026-08-07-010/slide-02.jpg|a/instagram/beauty_finds/2026-08-07-010/slide-03.jpg|a/instagram/beauty_finds/2026-08-07-010/slide-04.jpg|a/instagram/beauty_finds/2026-08-07-010/slide-05.jpg|a/instagram/beauty_finds/2026-08-07-010/slide-06.jpg">
+        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-010/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-010/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -87,15 +91,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@beauty_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:beauty_finds:2026-08-07-011', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/beauty_finds/2026-08-07-011/slide-01.jpg|a/instagram/beauty_finds/2026-08-07-011/slide-02.jpg|a/instagram/beauty_finds/2026-08-07-011/slide-03.jpg|a/instagram/beauty_finds/2026-08-07-011/slide-04.jpg|a/instagram/beauty_finds/2026-08-07-011/slide-05.jpg|a/instagram/beauty_finds/2026-08-07-011/slide-06.jpg">
+        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-011/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-011/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -111,15 +116,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@beauty_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:beauty_finds:2026-08-07-012', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/beauty_finds/2026-08-07-012/slide-01.jpg|a/instagram/beauty_finds/2026-08-07-012/slide-02.jpg|a/instagram/beauty_finds/2026-08-07-012/slide-03.jpg|a/instagram/beauty_finds/2026-08-07-012/slide-04.jpg|a/instagram/beauty_finds/2026-08-07-012/slide-05.jpg|a/instagram/beauty_finds/2026-08-07-012/slide-06.jpg">
+        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/beauty_finds/2026-08-07-012/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/beauty_finds/2026-08-07-012/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -135,15 +141,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@college_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:college_finds:2026-08-07-007', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/college_finds/2026-08-07-007/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/college_finds/2026-08-07-007/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/college_finds/2026-08-07-007/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/college_finds/2026-08-07-007/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/college_finds/2026-08-07-007/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/college_finds/2026-08-07-007/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/college_finds/2026-08-07-007/slide-01.jpg|a/instagram/college_finds/2026-08-07-007/slide-02.jpg|a/instagram/college_finds/2026-08-07-007/slide-03.jpg|a/instagram/college_finds/2026-08-07-007/slide-04.jpg|a/instagram/college_finds/2026-08-07-007/slide-05.jpg|a/instagram/college_finds/2026-08-07-007/slide-06.jpg">
+        <a href="a/instagram/college_finds/2026-08-07-007/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/college_finds/2026-08-07-007/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/college_finds/2026-08-07-007/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/college_finds/2026-08-07-007/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/college_finds/2026-08-07-007/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/college_finds/2026-08-07-007/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-007/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -159,15 +166,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@college_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:college_finds:2026-08-07-008', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/college_finds/2026-08-07-008/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/college_finds/2026-08-07-008/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/college_finds/2026-08-07-008/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/college_finds/2026-08-07-008/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/college_finds/2026-08-07-008/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/college_finds/2026-08-07-008/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/college_finds/2026-08-07-008/slide-01.jpg|a/instagram/college_finds/2026-08-07-008/slide-02.jpg|a/instagram/college_finds/2026-08-07-008/slide-03.jpg|a/instagram/college_finds/2026-08-07-008/slide-04.jpg|a/instagram/college_finds/2026-08-07-008/slide-05.jpg|a/instagram/college_finds/2026-08-07-008/slide-06.jpg">
+        <a href="a/instagram/college_finds/2026-08-07-008/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/college_finds/2026-08-07-008/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/college_finds/2026-08-07-008/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/college_finds/2026-08-07-008/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/college_finds/2026-08-07-008/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/college_finds/2026-08-07-008/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-008/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -183,15 +191,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@college_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:college_finds:2026-08-07-009', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/college_finds/2026-08-07-009/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/college_finds/2026-08-07-009/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/college_finds/2026-08-07-009/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/college_finds/2026-08-07-009/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/college_finds/2026-08-07-009/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/college_finds/2026-08-07-009/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/college_finds/2026-08-07-009/slide-01.jpg|a/instagram/college_finds/2026-08-07-009/slide-02.jpg|a/instagram/college_finds/2026-08-07-009/slide-03.jpg|a/instagram/college_finds/2026-08-07-009/slide-04.jpg|a/instagram/college_finds/2026-08-07-009/slide-05.jpg|a/instagram/college_finds/2026-08-07-009/slide-06.jpg">
+        <a href="a/instagram/college_finds/2026-08-07-009/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/college_finds/2026-08-07-009/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/college_finds/2026-08-07-009/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/college_finds/2026-08-07-009/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/college_finds/2026-08-07-009/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/college_finds/2026-08-07-009/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/college_finds/2026-08-07-009/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -207,15 +216,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:daily_finds:2026-08-07-013', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/daily_finds/2026-08-07-013/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-013/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-013/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-013/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-013/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-013/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/daily_finds/2026-08-07-013/slide-01.jpg|a/instagram/daily_finds/2026-08-07-013/slide-02.jpg|a/instagram/daily_finds/2026-08-07-013/slide-03.jpg|a/instagram/daily_finds/2026-08-07-013/slide-04.jpg|a/instagram/daily_finds/2026-08-07-013/slide-05.jpg|a/instagram/daily_finds/2026-08-07-013/slide-06.jpg">
+        <a href="a/instagram/daily_finds/2026-08-07-013/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-013/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-013/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-013/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-013/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-013/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-013/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -231,15 +241,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:daily_finds:2026-08-07-014', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/daily_finds/2026-08-07-014/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-014/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-014/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-014/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-014/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-014/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/daily_finds/2026-08-07-014/slide-01.jpg|a/instagram/daily_finds/2026-08-07-014/slide-02.jpg|a/instagram/daily_finds/2026-08-07-014/slide-03.jpg|a/instagram/daily_finds/2026-08-07-014/slide-04.jpg|a/instagram/daily_finds/2026-08-07-014/slide-05.jpg|a/instagram/daily_finds/2026-08-07-014/slide-06.jpg">
+        <a href="a/instagram/daily_finds/2026-08-07-014/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-014/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-014/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-014/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-014/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-014/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-014/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -255,15 +266,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@daily_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:daily_finds:2026-08-07-015', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/daily_finds/2026-08-07-015/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-015/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-015/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-015/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-015/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/daily_finds/2026-08-07-015/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/daily_finds/2026-08-07-015/slide-01.jpg|a/instagram/daily_finds/2026-08-07-015/slide-02.jpg|a/instagram/daily_finds/2026-08-07-015/slide-03.jpg|a/instagram/daily_finds/2026-08-07-015/slide-04.jpg|a/instagram/daily_finds/2026-08-07-015/slide-05.jpg|a/instagram/daily_finds/2026-08-07-015/slide-06.jpg">
+        <a href="a/instagram/daily_finds/2026-08-07-015/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-015/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-015/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-015/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-015/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/daily_finds/2026-08-07-015/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/daily_finds/2026-08-07-015/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -279,15 +291,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@home_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:home_finds:2026-08-07-001', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/home_finds/2026-08-07-001/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/home_finds/2026-08-07-001/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/home_finds/2026-08-07-001/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/home_finds/2026-08-07-001/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/home_finds/2026-08-07-001/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/home_finds/2026-08-07-001/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/home_finds/2026-08-07-001/slide-01.jpg|a/instagram/home_finds/2026-08-07-001/slide-02.jpg|a/instagram/home_finds/2026-08-07-001/slide-03.jpg|a/instagram/home_finds/2026-08-07-001/slide-04.jpg|a/instagram/home_finds/2026-08-07-001/slide-05.jpg|a/instagram/home_finds/2026-08-07-001/slide-06.jpg">
+        <a href="a/instagram/home_finds/2026-08-07-001/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/home_finds/2026-08-07-001/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/home_finds/2026-08-07-001/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/home_finds/2026-08-07-001/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/home_finds/2026-08-07-001/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/home_finds/2026-08-07-001/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-001/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -303,15 +316,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@home_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:home_finds:2026-08-07-002', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/home_finds/2026-08-07-002/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/home_finds/2026-08-07-002/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/home_finds/2026-08-07-002/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/home_finds/2026-08-07-002/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/home_finds/2026-08-07-002/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/home_finds/2026-08-07-002/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/home_finds/2026-08-07-002/slide-01.jpg|a/instagram/home_finds/2026-08-07-002/slide-02.jpg|a/instagram/home_finds/2026-08-07-002/slide-03.jpg|a/instagram/home_finds/2026-08-07-002/slide-04.jpg|a/instagram/home_finds/2026-08-07-002/slide-05.jpg|a/instagram/home_finds/2026-08-07-002/slide-06.jpg">
+        <a href="a/instagram/home_finds/2026-08-07-002/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/home_finds/2026-08-07-002/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/home_finds/2026-08-07-002/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/home_finds/2026-08-07-002/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/home_finds/2026-08-07-002/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/home_finds/2026-08-07-002/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-002/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -327,15 +341,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@home_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:home_finds:2026-08-07-003', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/home_finds/2026-08-07-003/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/home_finds/2026-08-07-003/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/home_finds/2026-08-07-003/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/home_finds/2026-08-07-003/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/home_finds/2026-08-07-003/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/home_finds/2026-08-07-003/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/home_finds/2026-08-07-003/slide-01.jpg|a/instagram/home_finds/2026-08-07-003/slide-02.jpg|a/instagram/home_finds/2026-08-07-003/slide-03.jpg|a/instagram/home_finds/2026-08-07-003/slide-04.jpg|a/instagram/home_finds/2026-08-07-003/slide-05.jpg|a/instagram/home_finds/2026-08-07-003/slide-06.jpg">
+        <a href="a/instagram/home_finds/2026-08-07-003/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/home_finds/2026-08-07-003/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/home_finds/2026-08-07-003/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/home_finds/2026-08-07-003/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/home_finds/2026-08-07-003/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/home_finds/2026-08-07-003/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/home_finds/2026-08-07-003/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -351,15 +366,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@tech_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:tech_finds:2026-08-07-004', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/tech_finds/2026-08-07-004/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-004/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-004/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-004/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-004/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-004/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/tech_finds/2026-08-07-004/slide-01.jpg|a/instagram/tech_finds/2026-08-07-004/slide-02.jpg|a/instagram/tech_finds/2026-08-07-004/slide-03.jpg|a/instagram/tech_finds/2026-08-07-004/slide-04.jpg|a/instagram/tech_finds/2026-08-07-004/slide-05.jpg|a/instagram/tech_finds/2026-08-07-004/slide-06.jpg">
+        <a href="a/instagram/tech_finds/2026-08-07-004/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-004/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-004/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-004/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-004/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-004/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-004/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -375,15 +391,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@tech_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:tech_finds:2026-08-07-005', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/tech_finds/2026-08-07-005/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-005/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-005/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-005/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-005/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-005/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/tech_finds/2026-08-07-005/slide-01.jpg|a/instagram/tech_finds/2026-08-07-005/slide-02.jpg|a/instagram/tech_finds/2026-08-07-005/slide-03.jpg|a/instagram/tech_finds/2026-08-07-005/slide-04.jpg|a/instagram/tech_finds/2026-08-07-005/slide-05.jpg|a/instagram/tech_finds/2026-08-07-005/slide-06.jpg">
+        <a href="a/instagram/tech_finds/2026-08-07-005/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-005/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-005/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-005/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-005/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-005/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-005/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -399,15 +416,16 @@
         <span class="chip instagram">Instagram</span>
         <span class="acct">@tech_finds</span>
         <span class="nslides">6 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:instagram:tech_finds:2026-08-07-006', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/instagram/tech_finds/2026-08-07-006/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-006/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-006/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-006/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-006/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/instagram/tech_finds/2026-08-07-006/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-06.jpg" alt="slide 6"></a>
+      <div class="strip" data-files="a/instagram/tech_finds/2026-08-07-006/slide-01.jpg|a/instagram/tech_finds/2026-08-07-006/slide-02.jpg|a/instagram/tech_finds/2026-08-07-006/slide-03.jpg|a/instagram/tech_finds/2026-08-07-006/slide-04.jpg|a/instagram/tech_finds/2026-08-07-006/slide-05.jpg|a/instagram/tech_finds/2026-08-07-006/slide-06.jpg">
+        <a href="a/instagram/tech_finds/2026-08-07-006/slide-01.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-006/slide-02.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-006/slide-03.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-006/slide-04.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-006/slide-05.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/instagram/tech_finds/2026-08-07-006/slide-06.jpg" target="_blank"><img loading="lazy" src="a/instagram/tech_finds/2026-08-07-006/slide-06.jpg" alt="slide 6"></a>
       </div>
       
       <div class="cap">
@@ -423,14 +441,15 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@beauty_finds</span>
         <span class="nslides">5 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:beauty_finds:2026-08-07-007', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-05.jpg" alt="slide 5"></a>
+      <div class="strip" data-files="a/tiktok/beauty_finds/2026-08-07-007/slide-01.jpg|a/tiktok/beauty_finds/2026-08-07-007/slide-02.jpg|a/tiktok/beauty_finds/2026-08-07-007/slide-03.jpg|a/tiktok/beauty_finds/2026-08-07-007/slide-04.jpg|a/tiktok/beauty_finds/2026-08-07-007/slide-05.jpg">
+        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-007/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-007/slide-05.jpg" alt="slide 5"></a>
       </div>
       
       <div class="cap">
@@ -446,16 +465,17 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@beauty_finds</span>
         <span class="nslides">7 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:beauty_finds:2026-08-07-008', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-07.jpg" alt="slide 7"></a>
+      <div class="strip" data-files="a/tiktok/beauty_finds/2026-08-07-008/slide-01.jpg|a/tiktok/beauty_finds/2026-08-07-008/slide-02.jpg|a/tiktok/beauty_finds/2026-08-07-008/slide-03.jpg|a/tiktok/beauty_finds/2026-08-07-008/slide-04.jpg|a/tiktok/beauty_finds/2026-08-07-008/slide-05.jpg|a/tiktok/beauty_finds/2026-08-07-008/slide-06.jpg|a/tiktok/beauty_finds/2026-08-07-008/slide-07.jpg">
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-06.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-06.jpg" alt="slide 6"></a>
+        <a href="a/tiktok/beauty_finds/2026-08-07-008/slide-07.jpg" target="_blank"><img loading="lazy" src="a/tiktok/beauty_finds/2026-08-07-008/slide-07.jpg" alt="slide 7"></a>
       </div>
       
       <div class="cap">
@@ -471,16 +491,17 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@college_finds</span>
         <span class="nslides">7 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:college_finds:2026-08-07-005', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-005/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-07.jpg" alt="slide 7"></a>
+      <div class="strip" data-files="a/tiktok/college_finds/2026-08-07-005/slide-01.jpg|a/tiktok/college_finds/2026-08-07-005/slide-02.jpg|a/tiktok/college_finds/2026-08-07-005/slide-03.jpg|a/tiktok/college_finds/2026-08-07-005/slide-04.jpg|a/tiktok/college_finds/2026-08-07-005/slide-05.jpg|a/tiktok/college_finds/2026-08-07-005/slide-06.jpg|a/tiktok/college_finds/2026-08-07-005/slide-07.jpg">
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-06.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-06.jpg" alt="slide 6"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-005/slide-07.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-005/slide-07.jpg" alt="slide 7"></a>
       </div>
       
       <div class="cap">
@@ -496,14 +517,15 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@college_finds</span>
         <span class="nslides">5 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:college_finds:2026-08-07-006', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/college_finds/2026-08-07-006/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-006/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-006/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-006/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/college_finds/2026-08-07-006/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-05.jpg" alt="slide 5"></a>
+      <div class="strip" data-files="a/tiktok/college_finds/2026-08-07-006/slide-01.jpg|a/tiktok/college_finds/2026-08-07-006/slide-02.jpg|a/tiktok/college_finds/2026-08-07-006/slide-03.jpg|a/tiktok/college_finds/2026-08-07-006/slide-04.jpg|a/tiktok/college_finds/2026-08-07-006/slide-05.jpg">
+        <a href="a/tiktok/college_finds/2026-08-07-006/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-006/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-006/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-006/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/college_finds/2026-08-07-006/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/college_finds/2026-08-07-006/slide-05.jpg" alt="slide 5"></a>
       </div>
       
       <div class="cap">
@@ -519,16 +541,17 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@daily_finds</span>
         <span class="nslides">7 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:daily_finds:2026-08-07-009', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-07.jpg" alt="slide 7"></a>
+      <div class="strip" data-files="a/tiktok/daily_finds/2026-08-07-009/slide-01.jpg|a/tiktok/daily_finds/2026-08-07-009/slide-02.jpg|a/tiktok/daily_finds/2026-08-07-009/slide-03.jpg|a/tiktok/daily_finds/2026-08-07-009/slide-04.jpg|a/tiktok/daily_finds/2026-08-07-009/slide-05.jpg|a/tiktok/daily_finds/2026-08-07-009/slide-06.jpg|a/tiktok/daily_finds/2026-08-07-009/slide-07.jpg">
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-06.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-06.jpg" alt="slide 6"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-009/slide-07.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-009/slide-07.jpg" alt="slide 7"></a>
       </div>
       
       <div class="cap">
@@ -544,16 +567,17 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@daily_finds</span>
         <span class="nslides">7 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:daily_finds:2026-08-07-010', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-07.jpg" alt="slide 7"></a>
+      <div class="strip" data-files="a/tiktok/daily_finds/2026-08-07-010/slide-01.jpg|a/tiktok/daily_finds/2026-08-07-010/slide-02.jpg|a/tiktok/daily_finds/2026-08-07-010/slide-03.jpg|a/tiktok/daily_finds/2026-08-07-010/slide-04.jpg|a/tiktok/daily_finds/2026-08-07-010/slide-05.jpg|a/tiktok/daily_finds/2026-08-07-010/slide-06.jpg|a/tiktok/daily_finds/2026-08-07-010/slide-07.jpg">
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-06.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-06.jpg" alt="slide 6"></a>
+        <a href="a/tiktok/daily_finds/2026-08-07-010/slide-07.jpg" target="_blank"><img loading="lazy" src="a/tiktok/daily_finds/2026-08-07-010/slide-07.jpg" alt="slide 7"></a>
       </div>
       
       <div class="cap">
@@ -569,16 +593,17 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@home_finds</span>
         <span class="nslides">7 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:home_finds:2026-08-07-001', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-001/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-07.jpg" alt="slide 7"></a>
+      <div class="strip" data-files="a/tiktok/home_finds/2026-08-07-001/slide-01.jpg|a/tiktok/home_finds/2026-08-07-001/slide-02.jpg|a/tiktok/home_finds/2026-08-07-001/slide-03.jpg|a/tiktok/home_finds/2026-08-07-001/slide-04.jpg|a/tiktok/home_finds/2026-08-07-001/slide-05.jpg|a/tiktok/home_finds/2026-08-07-001/slide-06.jpg|a/tiktok/home_finds/2026-08-07-001/slide-07.jpg">
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-06.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-06.jpg" alt="slide 6"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-001/slide-07.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-001/slide-07.jpg" alt="slide 7"></a>
       </div>
       
       <div class="cap">
@@ -594,16 +619,17 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@home_finds</span>
         <span class="nslides">7 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:home_finds:2026-08-07-002', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-05.jpg" alt="slide 5"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-06.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-06.jpg" alt="slide 6"></a>
-        <a href="a/tiktok/home_finds/2026-08-07-002/slide-07.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-07.jpg" alt="slide 7"></a>
+      <div class="strip" data-files="a/tiktok/home_finds/2026-08-07-002/slide-01.jpg|a/tiktok/home_finds/2026-08-07-002/slide-02.jpg|a/tiktok/home_finds/2026-08-07-002/slide-03.jpg|a/tiktok/home_finds/2026-08-07-002/slide-04.jpg|a/tiktok/home_finds/2026-08-07-002/slide-05.jpg|a/tiktok/home_finds/2026-08-07-002/slide-06.jpg|a/tiktok/home_finds/2026-08-07-002/slide-07.jpg">
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-05.jpg" alt="slide 5"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-06.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-06.jpg" alt="slide 6"></a>
+        <a href="a/tiktok/home_finds/2026-08-07-002/slide-07.jpg" target="_blank"><img loading="lazy" src="a/tiktok/home_finds/2026-08-07-002/slide-07.jpg" alt="slide 7"></a>
       </div>
       
       <div class="cap">
@@ -619,14 +645,15 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@tech_finds</span>
         <span class="nslides">5 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:tech_finds:2026-08-07-003', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-04.jpg" alt="slide 4"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-05.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-05.jpg" alt="slide 5"></a>
+      <div class="strip" data-files="a/tiktok/tech_finds/2026-08-07-003/slide-01.jpg|a/tiktok/tech_finds/2026-08-07-003/slide-02.jpg|a/tiktok/tech_finds/2026-08-07-003/slide-03.jpg|a/tiktok/tech_finds/2026-08-07-003/slide-04.jpg|a/tiktok/tech_finds/2026-08-07-003/slide-05.jpg">
+        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-04.jpg" alt="slide 4"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-003/slide-05.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-003/slide-05.jpg" alt="slide 5"></a>
       </div>
       
       <div class="cap">
@@ -642,13 +669,14 @@
         <span class="chip tiktok">TikTok</span>
         <span class="acct">@tech_finds</span>
         <span class="nslides">4 slides</span>
+        <button class="save-btn" onclick="saveSlides(this)">save slides</button>
         <button class="post-btn" onclick="togglePosted('2026-08-07:tiktok:tech_finds:2026-08-07-004', this)">mark posted</button>
       </header>
-      <div class="strip">
-        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-01.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-01.jpg" alt="slide 1"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-02.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-02.jpg" alt="slide 2"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-03.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-03.jpg" alt="slide 3"></a>
-        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-04.jpg" target="_blank" download><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-04.jpg" alt="slide 4"></a>
+      <div class="strip" data-files="a/tiktok/tech_finds/2026-08-07-004/slide-01.jpg|a/tiktok/tech_finds/2026-08-07-004/slide-02.jpg|a/tiktok/tech_finds/2026-08-07-004/slide-03.jpg|a/tiktok/tech_finds/2026-08-07-004/slide-04.jpg">
+        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-01.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-01.jpg" alt="slide 1"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-02.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-02.jpg" alt="slide 2"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-03.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-03.jpg" alt="slide 3"></a>
+        <a href="a/tiktok/tech_finds/2026-08-07-004/slide-04.jpg" target="_blank"><img loading="lazy" src="a/tiktok/tech_finds/2026-08-07-004/slide-04.jpg" alt="slide 4"></a>
       </div>
       
       <div class="cap">
@@ -680,6 +708,54 @@
   function copyCap(btn) {
     const text = btn.parentElement.querySelector('pre').textContent;
     navigator.clipboard.writeText(text).then(() => { btn.textContent = 'copied ✓'; setTimeout(() => btn.textContent = 'copy caption', 1400); });
+  }
+
+  // Getting the slides onto the phone that will post them.
+  //
+  // The old markup put download="" on the <a> around each thumbnail and left it
+  // at that, which failed twice over: there was no visible control, so nothing
+  // told you it was possible — and iOS Safari ignores the download attribute
+  // entirely, so tapping a slide just opened the image in a new tab. On the one
+  // device that actually does the posting, the feature did not exist.
+  //
+  // navigator.share with files IS supported on iOS and opens the native share
+  // sheet with Save Image / Save N Images, which is the only reliable route
+  // into the camera roll from a web page. Desktop browsers mostly do not
+  // support file sharing, so they fall back to sequential downloads, which is
+  // exactly where the download attribute does work.
+  async function saveSlides(btn) {
+    const strip = btn.closest('.card').querySelector('.strip');
+    const urls = strip.dataset.files.split('|').filter(Boolean);
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'preparing…';
+    try {
+      const files = await Promise.all(urls.map(async (u) => {
+        const blob = await (await fetch(u)).blob();
+        return new File([blob], u.split('/').pop(), { type: blob.type || 'image/jpeg' });
+      }));
+      if (navigator.canShare && navigator.canShare({ files })) {
+        btn.textContent = 'sharing…';
+        await navigator.share({ files });
+        btn.textContent = 'saved ✓';
+      } else {
+        // One click cannot fire N downloads without the browser blocking the
+        // rest, so they are spaced out.
+        files.forEach((f, i) => setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(f);
+          a.download = f.name;
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+        }, i * 350));
+        btn.textContent = 'downloaded ✓';
+      }
+    } catch (e) {
+      // AbortError just means the share sheet was dismissed — not a failure.
+      btn.textContent = e && e.name === 'AbortError' ? original : 'failed — retry';
+    }
+    btn.disabled = false;
+    setTimeout(() => { btn.textContent = original; }, 2200);
   }
   refresh();
 </script>
